@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Maven Medium';
+    src: url('../fonts/MavenPro-Medium.woff2') format('woff2'),
+        url('../fonts/MavenPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maven Extra Bold';
+    src: url('../fonts/MavenPro-ExtraBold.woff2') format('woff2'),
+        url('../fonts/MavenPro-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maven Semi Bold';
+    src: url('../fonts/MavenPro-SemiBold.woff2') format('woff2'),
+        url('../fonts/MavenPro-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maven Regular';
+    src: url('../fonts/MavenPro-Regular.woff2') format('woff2'),
+        url('../fonts/MavenPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maven Black';
+    src: url('../fonts/MavenPro-Black.woff2') format('woff2'),
+        url('../fonts/MavenPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maven Bold';
+    src: url('../fonts/MavenPro-Bold.woff2') format('woff2'),
+        url('../fonts/MavenPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
