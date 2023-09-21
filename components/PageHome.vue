@@ -31,12 +31,15 @@
 <style lang='scss' scoped>
 
   .home {
-    padding: 0px 200px;
+    // padding: 0px 200px;
     margin-top: -10vh;
     align-items: center;
     height: 100vh;
     margin-bottom: $gb-margin-bottom;
-    
+    max-width: 900px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     .title {
       user-select: none;
       margin-top: 120px;
@@ -97,7 +100,7 @@
     }
   }
   
-  @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     .home {
       padding: 0px 50px;
       padding-top: 140px;

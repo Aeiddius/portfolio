@@ -1,11 +1,11 @@
 <template>
   <div class="body" id="home">
     <Header/>
-    <PageHome />
+    
     <div id="pagecontent">
       <Sidebar />
 
-      
+      <PageHome />
       <PageAbout/>
       <PageSkill />
       <PageProject />
@@ -27,6 +27,10 @@
   }
 
   #pagecontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &:hover {
       .sidebar {
         right: 50px;

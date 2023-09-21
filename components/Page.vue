@@ -26,6 +26,7 @@
   .page {
     height: 100vh;
     width: 100%;
+    max-width: 1300px;
     scroll-margin-top: 4rem;
     margin-bottom: $gb-margin-bottom;
   }
