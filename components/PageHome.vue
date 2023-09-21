@@ -1,5 +1,10 @@
 <template>
   <div class="home flex space-between" id="home">
+
+    <div class="float">
+      <a class="link" target="_blank" href="https://github.com/Aeiddius"><Github /></a>
+      <a class="link" target="_blank" href="https://www.linkedin.com/in/adrian-tagayom/"><Linkedin /></a>
+    </div>
     <Portrait img="/me1.png" class="mt-4  0"/>
 
     <div class="title">
@@ -29,9 +34,30 @@
 </script>
 
 <style lang='scss' scoped>
+  .float {
+    display: flex;
+    gap: 10px;
+    top: 100px;
+    right: 0px;
+    position: absolute;
+    z-index: 1000;
+    float: right;
+  }
+
+  .link {
+    transform: scale(1);
+    transition: all 0.4s ease;
+    &:hover {
+      transform: scale(1.4);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
 
   .home {
     // padding: 0px 200px;
+    position: relative;
     margin-top: -10vh;
     align-items: center;
     height: 100vh;

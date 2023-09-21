@@ -150,3 +150,18 @@ $skill-size: 45px;
     widows: 70px;
   }
 }
+
+
+.link-logo {
+  svg {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    fill: $primary;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+    // &:hover {
+    //   transform: scale(1.2);
+    // }
+  }
+}
