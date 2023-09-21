@@ -2,17 +2,10 @@
   <Page name="Contact" subtitle="Hire me? (Please)" id="contact">
     
     <div class="contact--info">
-
       <Info title="Call Me" content="+63 976 3713 021"><Call/></Info>
-        
-      
       <Info title="Email" content="adriantagayom@gmail.com"><Email/></Info>
-        
-      
       <Info title="Location" content="Cavite, Philippines"><Location/></Info>
-        
     </div>
-
 
     <div class="contact--inputs flex column gap-10">
       <Input name="Name" placeholder="John Doe"/>
@@ -49,6 +42,28 @@
     width: 100%;
   }
 
+  @media only screen and (max-width: 940px) {
+    .contact--info {
+      padding-right: 0px;
+      margin-right: 0px;
+      border-right: none;
+      // border-bottom: 1px solid rgba($white, 0.2);
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .contact--inputs {
+      width: 70%;
+    }
+  }
 
+
+  @media only screen and (max-width: 700px) {
+    .contact--info {
+      margin: 20px 0px;
+    }
+    .contact--inputs {
+      width: 100%;
+    }
+  }
 
 </style>

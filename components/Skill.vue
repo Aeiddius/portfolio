@@ -24,20 +24,29 @@
   flex-direction: column;
   align-items: flex-start;
 
-  .skill-type {
-    font-size: 24px;
-    font-family: Maven Medium;
-    margin-bottom: 10px;
+    .skill-type {
+      font-size: 24px;
+      font-family: Maven Medium;
+      margin-bottom: 10px;
+    }
+
+    .skill-content {
+      display: flex;
+      gap: 20px;
+      background-color: $grey;
+      @include shadow;
+      border-radius: 10px;
+      padding: 15px 20px;
+    }
   }
 
-  .skill-content {
-    display: flex;
-    gap: 20px;
-    background-color: $grey;
-    @include shadow;
-    border-radius: 10px;
-    padding: 15px 20px;
-  }
-}
 
+
+  @media only screen and (max-width: 500px) {
+    .skill-box {
+      .skill-content {
+        padding: 10px 10px;
+      }
+    }
+  }
 </style>

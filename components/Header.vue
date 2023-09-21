@@ -26,7 +26,7 @@
     padding-right: 100px;
     width: 100%;
     border-bottom: 1px solid rgba($white, 0.2);
-
+    min-height: 36px;
     button {
       padding: 15px;
     }
@@ -34,5 +34,26 @@
 
   .page-title {
     font-family: Maven Semi Bold;
+  }
+
+  @media only screen and (max-width: 940px) {
+    .menu {
+      button {
+        padding: 10px;
+      }
+    }
+
+  }
+
+  @media only screen and (max-width: 700px) {
+    .menu {
+      display: none;
+    }
+
+    .header {
+      justify-content: center;
+      padding: 0px;
+    }
+
   }
 </style>

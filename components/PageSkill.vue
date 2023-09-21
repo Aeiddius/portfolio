@@ -45,13 +45,43 @@
         <Git/>
         <Electron/>
       </Skill>      
+
+      <Skill name="Design">
+        <Figma/>
+        <Photoshop/>
+      </Skill>   
     </div>
 
   </Page>
 </template>
 
-<script lang="ts" setup>
+<style lang="scss">
+  $skill-size: 45px;
+  @media only screen and (max-width: 1100px) {
+    .skill-logo {
+      svg {
+        height: $skill-size;
+        width: $skill-size;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    $skill-size: 30px;
+    .skill-logo {
+      svg {
+        height: $skill-size !important;
+        width: $skill-size !important;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+    .skill-content {
+      padding: 5px 10px;
+    }
+    
+  }  
 
 
-</script>
-
+</style>

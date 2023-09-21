@@ -63,4 +63,13 @@
       }
     }
   }
+
+  
+  @media only screen and (max-width: 940px) {
+    .input {
+      input, textarea {
+        padding: 20px;
+      }
+    }
+  }
 </style>

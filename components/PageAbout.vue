@@ -18,16 +18,20 @@
 </template>
 
 
-<style lang='scss' scoped>
+<style lang='scss'>
 
   .content {
     width: 100%;
-    padding: 0px 5vw;
+    display: flex;
+    justify-content: space-between;
   }
 
   .text {
-    width: 350px;
-    margin: 40px 0px 0px 450px;
+    width: 320px;
+    margin-top: 50px;
+    text-indent: 30px;
+    margin-right: 100px;
+    // margin: 40px 0px 0px px;
     p {
       overflow: hidden;
       color: rgba(255, 255, 255, 0.80);
@@ -39,6 +43,19 @@
       font-weight: 500;
       line-height: normal;
       line-height: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 940px) {
+    .content {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      .text {
+        margin-right: 0px;
+        width: 70vw;
+      }
     }
   }
 </style>

@@ -81,6 +81,11 @@ html, body {
   margin-top: 10px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
+
 .m-20 {
   margin-bottom: 20px;
 }
@@ -94,7 +99,7 @@ html, body {
 }
 
 
-
+$skill-size: 45px;
 .skill-logo {
   display: flex;
   flex-direction: column;
@@ -105,8 +110,8 @@ html, body {
     font-family: Maven Medium;
   }
   svg {
-    height: 50px;
-    width: 50px;
+    height: $skill-size;
+    width: $skill-size;
     transform: scale(1);
     transition: all 0.2s ease-in-out;
     &:hover {
@@ -141,7 +146,7 @@ html, body {
     cursor: pointer;
     transform: scale(1);
     transition: all 0.3s ease;
-    height: 70px !important;
-    widows: 70px !important;
+    height: 70px;
+    widows: 70px;
   }
 }

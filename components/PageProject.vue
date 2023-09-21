@@ -2,72 +2,51 @@
   <Page name="Projects" subtitle="My UI/UX Designs" id="project">
     
 
-    <div class="flex align-center w-100">
-      <div class="img-holder">
-        <div class="description">
-
-          <Left class="arrow"/>
-
-          <div class="content">
-            <span class="title">Chad</span>
-            <span class="text">A meme blog website which shows funny philosophy short essays written by gigachad bro.</span>
-          </div>
-          
-          
-          <Right class="arrow"/>
-
-
-        </div>
-        <NuxtImg src="/projects/chad-1.svg" class="img"/>
-      </div>
+    <div class="gallery flex align-center">
+      <Gallery :gallery="gallery"/>
     </div>
 
   </Page>
 </template>
 
 <script lang="ts" setup>
+  type Gallery = {
+    name: string,
+    image: string,
+    desc: string,
+  }
 
+  const gallery: Array<Gallery> = [
+    {
+      name: "Philosohpy Chad",
+      image: "/projects/chad-1.svg",
+      desc: "A meme blog website which shows funny philosophy short essays written by gigachad bro."
+    },
+    {
+      name: "English Dictionary",
+      image: "/projects/eng-1.svg",
+      desc: "A simple and sleek English Dictionary Website."
+    },
+    {
+      name: "Loremaster",
+      image: "/projects/loremaster.svg",
+      desc: "A wiki writing desktop app which exports a ready-to-go website."
+    },
+  ]
 
 </script>
 
-<style lang='scss' scoped>
+<style lang='scss'>
 
-  .img-holder {
-    position: relative;
-    user-select: none;
+  .gallery {
+    justify-content: center;
+    width: 100%;
+  }
 
-    .description {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      background-color: rgba($dark, 0.7);
-       
-      display: flex;
+  @media only screen and (max-width: 500px) {
 
-      justify-content: center;
-      align-items: center;
-      text-align: left;
-      .content {
-        display: flex;
-        flex-direction: column;
-      }
-      .title {
-        font-family: Maven Bold;
-        font-size: 64px;
-        margin-bottom: 10px;
-      }
+    .content {
+      padding: 0px 10px;
     }
   }
-
-  .img {
-    width: auto;
-    height: 500px;
-    border-radius: 20px;
-    @include shadow;
-    user-select: none;
-  }
-
-
-
-
 </style>

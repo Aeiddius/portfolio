@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  ssr: false,
+  ssr: true,
   vite: {
     css: {
       preprocessorOptions: {
@@ -23,13 +23,14 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Aeiddius",
+      title: "Adrian Tagayom",
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
 
     },
 
   },
+  link: [{ rel: 'icon', type: 'image/x-icon', href: '/omega.icon' }],
   modules: [
     '@nuxt/image',
   ],

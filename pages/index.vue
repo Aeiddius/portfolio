@@ -1,16 +1,16 @@
 <template>
-  <div class="body">
+  <div class="body" id="home">
     <Header/>
-
     <PageHome />
+    <div id="pagecontent">
+      <Sidebar />
 
-    <PageAbout />
-
-    <PageSkill />
-
-    <PageProject />
-
-    <PageContact />
+      
+      <PageAbout/>
+      <PageSkill />
+      <PageProject />
+      <PageContact />
+    </div>
     
 
   </div>
@@ -18,12 +18,19 @@
 
 <script lang="ts" setup>
   
-  
 </script>
 
-<style lang='scss' scoped>
+<style lang='scss'>
   .separator {
     // margin: 20vh 0px;
     height: 40vh;
+  }
+
+  #pagecontent {
+    &:hover {
+      .sidebar {
+        right: 50px;
+      }
+    }
   }
 </style>

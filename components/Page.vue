@@ -26,7 +26,7 @@
   .page {
     height: 100vh;
     width: 100%;
-    scroll-margin-top: 5.2rem;
+    scroll-margin-top: 4rem;
     margin-bottom: $gb-margin-bottom;
   }
 
@@ -37,5 +37,26 @@
   .content {
     width: 100%;
     padding: 0px 200px;
+  }
+
+
+  @media only screen and (max-width: 1100px) {
+    .content {
+      padding: 0px 100px;
+    }
+  }
+
+  @media only screen and (max-width: 940px) {
+    .title {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  @media only screen and (max-width: 940px) {
+
+    .content {
+      padding: 0px 50px;
+    }
   }
 </style>

@@ -24,21 +24,12 @@
 </script>
 
 <style lang='scss' scoped>
-
-  $width: 350px;
-
   .img-box {
-    width: $width;
     cursor: pointer;
     transform: scale(1);
     transition: all 0.3s linear;
     box-sizing: border-box;
     flex-shrink: 0;
-    user-select: none;
-    height: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     &:hover {
       transform: scale(1.1);
     }
@@ -47,18 +38,18 @@
     }
   }
   .img {
-    width: $width;
-    height: auto;
+    width: auto;
+    height: 360px;
     flex-shrink: 0;
-    bottom: 0px;
-    position: absolute;
-    // left: 10px;
+    // position: absolute;
+    // bottom: 0px;
+    // left: 15px;
     transition: all 0.5s ease-in-out;
   }
 
   .box {
     position: absolute;
-    bottom: 0px;
+    bottom: 5px;
     width: 357px;
     height: 249px;
     flex-shrink: 0;
@@ -79,7 +70,7 @@
     .img {
       width: auto;
       height: 310px;
-
+      left: 5px;
     } 
 
     
@@ -95,10 +86,8 @@
   }
 
 
-  @media only screen and (max-width: 940px) {
-    .img-box {
-      height: 320px;
-    }
+  @media only screen and (max-width: 800px) {
+
 
   }
 </style>
