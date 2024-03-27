@@ -18,6 +18,11 @@
 
   const gallery: Array<Gallery> = [
     {
+      name: "Project ME",
+      image: "/projects/ME Reviewer.svg",
+      desc: "A website dedicated to helping Fresh Mechanical Engrs Learn."
+    },
+    {
       name: "Philosohpy Chad",
       image: "/projects/chad-1.svg",
       desc: "A meme blog website which shows funny philosophy short essays written by gigachad bro."
@@ -28,10 +33,15 @@
       desc: "A simple and sleek English Dictionary Website."
     },
     {
-      name: "Loremaster",
-      image: "/projects/loremaster.svg",
-      desc: "A wiki writing desktop app which exports a ready-to-go website."
+      name: "Journality",
+      image: "/projects/journality.svg",
+      desc: "A simple Note taking app"
     },
+    // {
+    //   name: "Loremaster",
+    //   image: "/projects/loremaster.svg",
+    //   desc: "A wiki writing desktop app which exports a ready-to-go website."
+    // },
   ]
 
 </script>
